@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Ignacio Fiori</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Portfolio</h1>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#conocimientos">Conocimientos</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Sección de presentación con card ===== -->
+   <div class="card">
+  <section id="inicio" class="seccion">
+      <img src="images/ProfilePicturePhoto.jpg" alt="Foto personal" class="foto">
+      <h1>Ignacio Fiori</h1>
+      <p>Desarrollador de Software – <strong>MuleSoft</strong> y <strong>Java</strong></p>
+   
+  </section>
+
+  <!-- ===== Sección Sobre mí con card ===== -->
+  <section id="sobre-mi" class="seccion">
+      <h2>Sobre mí</h2>
+      <p>
+      Soy estudiante de la Tecnicatura Universitaria en Programación de la UTN,
+      donde continúo fortaleciendo mis bases en desarrollo de software. 
+      Actualmente trabajo en <strong>Acqua</strong>, una startup dedicada a la 
+      <strong>integración de datos</strong>, donde desarrollo y mantengo 
+      soluciones de integración basadas en <strong>MuleSoft</strong> y 
+      <strong>Java</strong>.
+    </p>
+    <p>
+      Me motiva aprender y adoptar nuevas tecnologías, optimizar procesos y 
+      mejorar continuamente la calidad y el rendimiento de las aplicaciones. 
+      Disfruto enfrentar desafíos que impulsen mi crecimiento profesional y 
+      el de los proyectos en los que participo.
+    </p>
     
+  </section>
+</div>
+  <!-- ===== Conocimientos ===== -->
+  <section id="conocimientos" class="seccion">
+    <h2>Conocimientos</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Java y Spring Boot</li>
+      <li>MuleSoft y APIs REST</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <!-- ===== Proyectos ===== -->
+   <div class="card">
+  <section id="proyectos" class="seccion">
+    <h2>Proyectos</h2>
+    <p>Algunos trabajos académicos y personales:</p>
+    <ul>
+      <li>Oficina Virtual de energía eléctrica (MuleSoft)</li>
+      <li>Sistema de gestión de librería en Java</li>
+      <li>Portfolio web personal</li>
+    </ul>
+  </section>
+  </div>
+
+  <!-- ===== Contacto ===== -->
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <form id="form-contacto">
+      <label>Nombre:
+        <input type="text" name="nombre" required>
+      </label>
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>Mensaje:
+        <textarea name="mensaje" required></textarea>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="redes">
+      <a href="https://github.com" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Ignacio Fiori</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
