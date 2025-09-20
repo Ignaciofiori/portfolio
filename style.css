@@ -53,7 +53,7 @@ header nav li a:hover {
 /* ====== Card ====== */
 .card {
   background: #e0f7fa;
-  padding: 30px;
+  padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   margin-bottom: 30px;
@@ -98,6 +98,39 @@ header nav li a:hover {
 }
 
 .imagen-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+/* ====== Proyectos ====== */
+.proyectos-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.proyecto-card {
+  background: #fcfcfc; 
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.proyecto-card h3 a {
+  color: #007c92;
+  text-decoration: none;
+}
+
+.proyecto-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.proyecto-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
