@@ -190,30 +190,29 @@
 
   <!-- ===== Contacto ===== -->
   <section id="contacto" class="seccion">
+     <form id="form-contacto">
     <h2>Contacto</h2>
-    <form id="form-contacto">
       <label>Nombre:
-        <input type="text" name="nombre" required>
+        <input type="text" id="nombre" required>
       </label>
       <label>Email:
-        <input type="email" name="email" required>
+        <input type="email" id="email" required>
       </label>
       <label>Mensaje:
-        <textarea name="mensaje" required></textarea>
+        <textarea id="mensaje" required></textarea>
       </label>
-      <button type="submit">Enviar</button>
+      <button type="submit" onclick="enviar()">Enviar</button>
     </form>
     <div class="redes">
-      <a href="https://github.com" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Ignaciofiori" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/ignaciofiori/" target="_blank">LinkedIn</a>
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2025 Ignacio Fiori</p>
+    <p>© 2025 - Ignacio Fiori</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
