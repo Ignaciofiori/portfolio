@@ -219,10 +219,17 @@
   <footer>
     <p>© 2025 - Ignacio Fiori</p>
   </footer>
-    <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  (function(){
-     emailjs.init("2zW_vCYSb5vCLLdFp"); 
+  (function () {
+    // chequeo defensivo para evitar romper si el SDK no cargó
+    if (!window.emailjs) {
+      console.error("EmailJS no cargó (SDK ausente o bloqueado).");
+      return;
+    }
+    // inicializá con tu Public Key
+    emailjs.init({ publicKey: "2zW_vCYSb5vCLLdFp" });
+    console.log("EmailJS OK:", emailjs);
   })();
 </script>
   <script src="script.js"></script>
