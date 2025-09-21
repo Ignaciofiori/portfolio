@@ -196,3 +196,24 @@ footer {
   color: white;
   margin-top: 40px;
 }
+
+
+
+/*media querys*/
+@media (max-width: 480px) {
+  header nav li a {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .conocimientos-grid {
+  gap: 20px;                  
+  margin-top: 15px;
+}
+
+.imagen-container {
+ 
+  width: 110px;               
+
+}
+}
