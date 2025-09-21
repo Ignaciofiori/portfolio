@@ -1,7 +1,11 @@
 
+html {
+  scroll-padding-top: 80px; /* Ajustá 80px al alto real del header */
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Lora' , serif;
   background: #fcfcfc;   
   color: #333;
 }
@@ -13,6 +17,11 @@ strong {
 
 header {
   background: #007c92; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 /*NAVBar*/
 header nav ul {

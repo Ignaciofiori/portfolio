@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Ignacio Fiori</title>
+  <title>Portafolio - Ignacio Fiori</title>
+  <link rel="icon" type="image/png" href="images/Ignacio-Fiori-Icon.png">
+  <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+<script>
+  (function(){
+     emailjs.init("2zW_vCYSb5vCLLdFp"); 
+  })();
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -34,11 +44,13 @@
       <p>
       Soy estudiante de la Tecnicatura Universitaria en Programación de la UTN,
       donde continúo fortaleciendo mis bases en desarrollo de software. 
-      Actualmente trabajo en <strong>Acqua</strong>, una startup dedicada a la 
+      Actualmente trabajo en <a href="https://www.linkedin.com/company/acqua_it/posts/?feedView=all" target="_blank">
+        <strong>Acqua</strong></a>, una startup dedicada a la 
       <strong>integración de datos</strong>, donde desarrollo y mantengo 
       soluciones de integración basadas en <strong>MuleSoft</strong> y 
       <strong>Java</strong>.
     </p>
+
     <p>
       Me motiva aprender y adoptar nuevas tecnologías, optimizar procesos y 
       mejorar continuamente la calidad y el rendimiento de las aplicaciones. 
@@ -126,7 +138,7 @@
         </h3>
         <p>
           Proyecto de <strong>MuleSoft</strong> realizado como prueba técnica de ingreso.
-          Implementa flujos CRUD y transformaciones de datos sobre<strong>vuelos y clientes</strong> usando dataweave ,
+          Implementa flujos CRUD y transformaciones de datos sobre <strong>vuelos y clientes</strong> usando dataweave,
           integrando <strong>MySQL</strong> y exponiendo servicios REST.
         </p>
       </div>
@@ -190,25 +202,25 @@
 
   <!-- ===== Contacto ===== -->
   <section id="contacto" class="seccion">
-     <form id="form-contacto">
+     <form id="form-contacto" onsubmit="enviar(event)">
     <h2>Contacto</h2>
       <label>Nombre:
-        <input type="text" id="nombre" required>
+        <input type="text" id="nombre" name="nombre" required>
       </label>
       <label>Email:
-        <input type="email" id="email" required>
+        <input type="email" id="email" name="email" required>
       </label>
       <label>Mensaje:
-        <textarea id="mensaje" required></textarea>
+        <textarea id="mensaje" name="mensaje" required></textarea>
       </label>
-      <button type="submit" onclick="enviar()">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
     <div class="redes">
       <a href="https://github.com/Ignaciofiori" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/ignaciofiori/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ignaciofiori/" target="_blank">LinkedIn</a> |
+      <a href="https://wa.me/5491136303031" target="_blank">WhatsApp</a>
     </div>
   </section>
-
   <!-- ===== Footer ===== -->
   <footer>
     <p>© 2025 - Ignacio Fiori</p>
