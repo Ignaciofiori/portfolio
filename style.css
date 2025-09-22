@@ -59,13 +59,20 @@ header nav li a:hover {
   text-align: center;
 }
 
+.seccion-contacto{
+ margin: 0;           /* sin margen externo */
+  padding: 60px 20px;  /* podés ajustar el alto interno a tu gusto */
+  max-width: 100%;     /* para que el fondo abarque todo el ancho */
+  width: 100%;
+}
+
 /* ====== Card ====== */
 .card {
   background: #e0f7fa;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .foto {
@@ -145,6 +152,16 @@ header nav li a:hover {
 }
 
 /* ====== Contacto ====== */
+#contacto {
+  background: url("images/contact-bg.png") no-repeat center center;
+  background-size: cover;  
+  padding: 60px 20px;      
+  border-radius: 12px;
+  text-align: center;
+  margin: 0;     
+}
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -197,14 +214,20 @@ button:hover {
   margin-top: 20px;  
   text-align: center;
 }
+
+.redes a{
+  text-decoration: none;
+  color:#007c92
+}
 /* ====== Footer ====== */
 footer {
   text-align: center;
   padding: 20px;
   background: #007c92;
   color: white;
-  margin-top: 40px;
+  margin-top: 0;
 }
+
 
 
 
