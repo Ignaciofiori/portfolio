@@ -55,9 +55,20 @@ header nav li a:hover {
   border-radius: 4px;
 }
 
+/*INICIO*/
+.seccion-inicio {
+  width: 100%;
+  align-items: center;
+  padding: 35px;
+  background: url("images/principal-bg.png") no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .seccion {
   max-width: 900px;
- margin: 50px auto ; 
+  margin: 50px auto ; 
   padding: 10px 20px;
   text-align: center;
 
